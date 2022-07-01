@@ -1,0 +1,16 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "sass global.scss global.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gutemberg-jhonata/portifolio.git"
+  },
+  "author": "Jhonata Gutemberg",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
