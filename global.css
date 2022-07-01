@@ -1,0 +1,46 @@
+:root {
+    --base: #142637;
+    --primary: #F9D640;
+    --light: #FFFFFF;
+    --light-70: rgba(255, 255, 255, 0.7);
+    --light-40: rgba(255, 255, 255, 0.4);
+    --light-10: rgba(255, 255, 255, 0.1);
+    --danger: #FF4004;
+}
+
+body {
+    margin: 0;
+    background-color: var(--base);
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid red;
+}
+
+.profile-image {
+    width: 216px;
+    height: 216px;
+
+    border-radius: 100%;
+    outline: 4px solid var(--light-70);
+    outline-offset: -4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    background-image: url('https://github.com/gutemberg-jhonata.png');
+    background-size: cover;
+
+    width: 192px;
+    height: 192px;
+
+    border-radius: 100%;
+}
