@@ -1,16 +1,25 @@
 :root {
-    --base: #142637;
-    --primary: #F9D640;
-    --light: #FFFFFF;
-    --light-70: rgba(255, 255, 255, 0.7);
-    --light-40: rgba(255, 255, 255, 0.4);
-    --light-10: rgba(255, 255, 255, 0.1);
-    --danger: #FF4004;
+    --color-base: #142637;
+    --color-primary: #F9D640;
+    --color-light: #FFFFFF;
+    --color-light-70: rgba(255, 255, 255, 0.7);
+    --color-light-40: rgba(255, 255, 255, 0.4);
+    --color-light-10: rgba(255, 255, 255, 0.1);
+    --color-danger: #FF4004;
+
+    --font-large: 32px;
+    --font-normal: 21px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
-    background-color: var(--base);
+    background-color: var(--color-base);
+    font-family: 'Poppins', sans-serif;
 
     display: flex;
     justify-content: center;
@@ -23,12 +32,33 @@ main {
 }
 
 .profile-card {
-    border: 1px solid red;
     margin-inline: 60px;
 
+    display: flex;
+    justify-content: space-between;
+
     section {
-        color: var(--light);
+        color: var(--color-light);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: var(--font-large);
+            line-height: 48px;
+        }
+
+        h2 {
+            font-size: var(--font-normal);
+            line-height: 32px;
+        }
     }
+}
+
+.social-content {
+    padding-block: 12px;
 }
 
 .profile-image {
@@ -36,7 +66,7 @@ main {
     height: 216px;
 
     border-radius: 100%;
-    outline: 4px solid var(--light-70);
+    outline: 4px solid var(--color-light-70);
     outline-offset: -4px;
 
     display: flex;
