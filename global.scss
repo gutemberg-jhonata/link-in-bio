@@ -57,6 +57,14 @@ main {
 
 .social-content {
     padding-block: 12px;
+
+    display: flex;
+    gap: 56px;
+
+    i {
+        font-size: 32px;
+        color: $color-primary;
+    }
 }
 
 .profile-image {
