@@ -68,24 +68,16 @@ main {
 }
 
 .profile-image {
-    width: 216px;
-    height: 216px;
-
-    border-radius: 100%;
-    outline: 4px solid $color-light-70;
-    outline-offset: -4px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.avatar {
-    background-image: url('https://github.com/gutemberg-jhonata.png');
-    background-size: cover;
+    overflow: hidden;
 
     width: 192px;
     height: 192px;
 
     border-radius: 100%;
+    outline: 4px solid $color-light-70;
+    outline-offset: 8px;
+
+    img {
+        width: 100%;
+    }
 }
