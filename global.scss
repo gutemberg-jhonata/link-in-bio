@@ -81,10 +81,14 @@ header {
 }
 
 .social-content {
-    padding-block: 0.75rem;
+    padding-block: 1.5rem;
 
     display: flex;
     gap: 3.5rem;
+
+    @media (max-width: $screen-md) {
+        gap: 2.5rem;
+    }
 
     i {
         font-size: 2rem;
